@@ -9,9 +9,6 @@ $experience   = $_POST['experience'];
 $img          = $_FILES['photo']['tmp_name'];
 $imageContent = file_get_contents($img);
 
-
-
-
 try {
     
     $sql = "INSERT INTO workers (name, age, experience, photo) VALUES (?, ?, ?, ?)";
